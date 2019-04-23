@@ -1,0 +1,29 @@
+ImportError: No module named 'numpy.core._multiarray_umath'
+Traceback (most recent call last):
+  File "/usr/local/bin/mvNCCompile", line 35, in <module>
+    from Controllers.Scheduler import load_myriad_config, load_network
+  File "/usr/local/bin/ncsdk/Controllers/Scheduler.py", line 22, in <module>
+    from Models.Network import *
+  File "/usr/local/bin/ncsdk/Models/Network.py", line 18, in <module>
+    from Controllers.NCE import NCE_Scheduler
+  File "/usr/local/bin/ncsdk/Controllers/NCE.py", line 26, in <module>
+    from Models.NetworkStage import NetworkStage
+  File "/usr/local/bin/ncsdk/Models/NetworkStage.py", line 24, in <module>
+    from Controllers.CnnHardware import *
+  File "/usr/local/bin/ncsdk/Controllers/CnnHardware.py", line 24, in <module>
+    from Models.StageDefinitions.OpManager import get_op_definition
+  File "/usr/local/bin/ncsdk/Models/StageDefinitions/OpManager.py", line 23, in <module>
+    from Models.StageDefinitions.Convolution import *
+  File "/usr/local/bin/ncsdk/Models/StageDefinitions/Convolution.py", line 22, in <module>
+    import Models.StageDefinitions.OpHelpers as OpHelpers
+  File "/usr/local/bin/ncsdk/Models/StageDefinitions/OpHelpers.py", line 17, in <module>
+    import Controllers.Parsers.Parser.Convolution2D as Layer
+  File "/usr/local/bin/ncsdk/Controllers/Parsers/__init__.py", line 3, in <module>
+    from .Caffe import CaffeParser
+  File "/usr/local/bin/ncsdk/Controllers/Parsers/Caffe.py", line 30, in <module>
+    import caffe
+  File "/opt/movidius/caffe/python/caffe/__init__.py", line 1, in <module>
+    from .pycaffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, RMSPropSolver, AdaDeltaSolver, AdamSolver
+  File "/opt/movidius/caffe/python/caffe/pycaffe.py", line 13, in <module>
+    from ._caffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, \
+SystemError: initialization of _caffe raised unreported exception
