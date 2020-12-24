@@ -13,3 +13,8 @@ sudo dkms install -m rtl8812au -v 4.2.2
 ```
 dconf-editor
 This will makes windows appeared at center `/org/gnome/mutter/center-new-windows`
+
+# Redshift
+```
+redshift -l 13.1:100.1 -t 5800:4500 -m randr -v
+```
